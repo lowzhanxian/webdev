@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BOOKING </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image/logotitle.png" type="image/logotitle.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+    
+    
+    #navbar{
+        border: 1px solid black;
+        
+    }
+    #booknav:hover{
+        background-color: grey;
+    }
+    #membernav:hover{
+        background-color: grey;
+    }
+    #bookreceiptnav:hover{
+        background-color: grey;
+    }
+    #morenav:hover{
+        background-color: grey;
+    }
+    #aboutusnav:hover{
+        background-color: grey;
+    }
+    #contactusnav:hover{
+        background-color: grey;
+    }
+    #logoutnav:hover{
+        background-color: grey;
+    }
+    
+    #book1:hover{
+        background-color: grey;
+        border: none;
+    }
+    
+    
+    body{
+        background-color: black;
+    }
+    
+    #court{
+       list-style-type: none;
+       margin: 0px;
+       padding: 0px;
+       overflow: hidden;
+       background-color:grey; 
+       margin-top: 20px;
+       
+    }
+    
+    #court li {
+      float: left;
+      width: 150px;
+    }
+    
+    #court li a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        color:white;
+    }
+     
+    #court li a:hover{
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    #cancelbook{
+        display:inline-block;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    #contactus{
+        margin-top: 30px;
+    }
+    #video{width: 100%;
+    margin-top: -20px;}
+    #bookrules{
+        color: white;
+        text-align: center;
+        font-size: 40px;
+    }
+    #formcourt1{margin-left: 250px;
+    border-radius: 20px;background-color: #FFB6C1;
+    }
+    
+    #transac{width:500px;
+            
+             margin-left: 250px;
+             border-radius: 20px;
+             
+             }
+    #reserve{width:500px;
+            
+             margin-left: 250px;
+             border-radius: 20px;
+                 
+             }
+    #po{width: 500px;
+        margin-left: 250px;
+             border-radius: 20px;
+    }
+    #oop{
+        width: 500px;
+        margin-left: 250px;
+        border-radius: 20px;
+    }
+    #uande{
+        width: 500px;
+        
+        margin-left: 250px;
+        border-radius: 20px;
+        ; 
+        
+    }
+    @media only screen and (max-width: 400px) {
+        #navbar{
+            width: 100%;
+        }
+        
+        
+        #bookrules{
+            font-size: 20px;
+            text-align: center;
+        }
+        #video{width: 100%;}
+        #formcourt1{margin-left: 0px;
+    width: 100%;border-radius: 20px;background-color: #FFB6C1;
+    }
+    
+    #transac{width: 390px;
+            
+             margin-left: 0px;
+             border-radius: 20px;
+             
+             }
+    #reserve{width: 390px;
+            
+             margin-left: 0px;
+             border-radius: 20px;
+                 
+             }
+    #po{width: 500px;
+        margin-left: 0px;
+             border-radius: 20px;
+    }
+    #oop{
+        width: 500px;
+        margin-left: 0px;
+        border-radius: 20px;
+    }
+    #uande{
+        width: 500px;
+        
+        margin-left: 0px;
+        border-radius: 20px;
+        ; 
+    }
+    #contactus{
+        width: 100%;
+    }
+        
+        
+    
+    
+    
+   
+            
+
+
+
+
+
+
+</style>
+
+</head>
+<nav id="navbar" class="navbar bg-light px-3 mb-3 bg-dark">
+            <a class="navbar-brand" href="http://localhost/ReservationBadminton/public_html/homepage.html#abtus" style="color:white;"><img src="image/logotitle.png" height="100px" alt="logo"/>CLT SPORT CENTRE</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item" id="booknav">
+                <a class="nav-link" href="http://localhost/ReservationBadminton/public_html/book.html" style="color:white;">BOOK NOW</a>
+            </li>
+            <li class="nav-item" id="membernav">
+              <a class="nav-link" href="http://localhost/ReservationBadminton/public_html/membership.html" style="color:white;">JOIN MEMBERSHIP</a>
+            </li>
+            <li class="nav-item" id="bookreceiptnav">
+              <a class="nav-link" href="http://localhost/ReservationBadminton/public_html/History.html" style="color:white;">MYBOOKING</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" id="morenav" style="color:white;"  >MORE</a>
+              <ul class="dropdown-menu bg-dark">
+                  <li><a class="dropdown-item" href="http://localhost/ReservationBadminton/public_html/aboutus.html" id="aboutusnav" style="color:white;">About Us</a></li>
+                  <li><a class="dropdown-item" href="http://localhost/ReservationBadminton/public_html/contactus.html#" id="contactusnav" style="color:white;">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="http://localhost/ReservationBadminton/public_html/profile.html#" id="contactusnav" style="color:white;">PROFILE</a></li>
+
+                  <li><a class="dropdown-item" href="http://localhost/ReservationBadminton/public_html/login.html" id="loginnav" style="color:white;">Log In</a></li>
+                  <li><a class="dropdown-item" href="http://localhost/ReservationBadminton/public_html/login.html" id="logoutnav" style="color:white;">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+
+    
+    <div id="dekstop-book">
+        <div class="bookpage">
+            
+            
+            <video id="video" autoplay muted loop id="myVideo"  >
+                <source src="image/badmintonvideo.mp4" type="video/mp4">
+            </video>
+            
+            
+            
+                
+                
+            
+        </div>
+        
+        <h1 id="bookrules">Basic Member Price Are RM18</h1>
+        <div id="formcourt1"class="col-lg-8  ">
+            
+                <h1 id="courbook" style='font-size:30px;text-align: center;color: white;padding-top: 10px;'>Court Booking</h1>
+                <h1 id="transaction"style='font-size:15px;text-align: center;color: white;padding-top: 10px;'>Transaction Date</h1>
+                <div id="transac" class="form-group col-lg-8  " >
+                <input type="date" class='form-control' id="date_transaction"  name="court_date" >
+                </div>
+                <h1 id="transaction"style='font-size:15px;text-align: center;color: white;'>Reservation Date</h1>
+                <div class="form-group col-lg-8  " id="reserve">
+                <input type="date" class='form-control' id="date_reservation"  name="court_date" >
+                </div>
+                <div id="op" class="row" style="margin-top: -10px;">
+                    <div id="po"class="form-group col-lg-8  " >    
+                        <div class="form-floating" style="margin-top:20px;">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Select Court</option>
+                              <option value="1">C1</option>
+                              <option value="2">C2</option>
+                              <option value="3">C3</option>
+                              <option value="4">C4</option>
+                              <option value="5">C5</option>
+                              <option value="6">C6</option>
+                              <option value="7">C7</option>
+                              <option value="8">C8</option>
+                              <option value="8">C9</option>
+                              <option value="8">C10</option>
+                            </select>
+                            <label for="floatingSelect">Choose Court:</label>
+                        </div>
+                    </div>
+                    <div id="oop"class="form-group col-lg-6  " >    
+                        <div class="form-floating" >
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                              <option selected>Click Here</option>
+                              <option value="1">10AM-12PM</option>
+                              <option value="2">12PM-1PM</option>
+                              <option value="3">1PM-3PM</option>
+                              <option value="4">3PM-5PM</option>
+                              <option value="5">5PM-6PM</option>
+                              <option value="6">6PM-8PM</option>
+                              <option value="7">8PM-9PM</option>
+                              <option value="8">9PM-11PM</option>
+                            </select>
+                            <label for="floatingSelect">CHOOSE TIME SLOT:</label>
+                        </div>
+                    </div>
+                    
+                
+                    <div class="row" style="margin-top: 10px;">
+                        <div id="uande" class="form-group col-lg-8  " >
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <input type="username" class="form-control" id="exampleFormControlInput2" style='margin-top:10px;' placeholder="username"/>
+                            
+                            <div  id="cancelbook">
+                                <button type="button" class="btn btn-outline-danger">Cancel</button>
+                                <button type="button" class="btn btn-success"><a style="text-decoration:none;color: white;" href="http://localhost/ReservationBadminton/public_html/paymentdetails.html">Book</a></button>
+                              </div>
+                        </div>
+                    </div>
+        
+                </div>    
+             
+      </div>
+    </div>
+    
+    
+    
+    
+    <div id="iphone-book">
+        
+    </div>
+    
+        
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<footer class="py-5 bg-dark" id="contactus">
+    <div class="container">
+        <div class="row" >
+          <div class="col-sm text-center text-white">
+             <button type="button" class="btn btn-labeled btn-success" style='width:50px ;height: 50px'>
+               <span class="btn-label" ><a href="http://localhost/ReservationBadminton/public_html/contactus.html"><i class="fa fa-envelope"id="email"></i></a></span></button>
+          </div>
+          <div class="col-sm text-center text-white">
+            <div class="col-sm text-center text-white">
+             <button type="button" class="btn btn-labeled btn-success" style='width:50px ;height: 50px'>
+               <span class="btn-label"><i class="fa fa-phone"></i></span></button>
+            </div>
+          </div>
+          <div class="col-sm text-center text-white">
+            <div class="col-sm text-center text-white">
+             <button type="button" class="btn btn-labeled btn-success" style='width:50px ;height: 50px'>
+               <span class="btn-label"><i class="fa fa-map-marker"></i></span></button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top:30px;">
+        <p class="m-0 text-center text-white">Copyright &copy; CLT SPORT CENTRE 2022</p>
+    </div>
+</footer>
+</html> 
